@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:chatgpt/core/themaing/app_colors.dart';
+import 'package:chatgpt/core/themaing/app_image_assets.dart';
 import 'package:chatgpt/feature/chat/presenation/views/chat_screen.dart';
 import 'package:chatgpt/feature/home/presenation/widgets/suggetion_box.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
           colors: [
             Colors.black,
             Colors.blue,
-          ], // Set your gradient colors here
+          ],
         ),
       ),
       child: Scaffold(
@@ -53,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: CircleAvatar(
                     backgroundColor: ColorManger.whiteColor,
                     child: Image.asset(
-                      'assets/bot.png',
+                      ImagesAssetsManger.bot,
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -110,21 +111,25 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-            onPressed: () async {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return const ChatScreen();
-              }));
-            },
-            elevation: 10,
-            backgroundColor: ColorManger.whiteColor,
-            tooltip: "Chat with Broxi",
-            child: Image.asset(
-              "assets/gpt.png",
-              width: 33,
-            )),
+          onPressed: () async {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return const ChatScreen();
+                },
+              ),
+            );
+          },
+          elevation: 10,
+          backgroundColor: ColorManger.whiteColor,
+          tooltip: "Chat with Broxi",
+          child: Image.asset(
+            ImagesAssetsManger.gpt,
+            width: 33,
+          ),
+        ),
       ),
     );
   }
 }
-
-String? value;
