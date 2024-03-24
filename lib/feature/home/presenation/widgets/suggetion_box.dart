@@ -1,4 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:chatgpt/core/themaing/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class SuggetionBox extends StatelessWidget {
@@ -24,12 +24,15 @@ class SuggetionBox extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(header,
-              style: const TextStyle(
-                  fontFamily: "Cera Pro",
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white)),
+          Text(
+            header,
+            style: const TextStyle(
+              fontFamily: "Cera Pro",
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: ColorManger.whiteColor,
+            ),
+          ),
           const SizedBox(
             height: 5,
           ),
@@ -38,7 +41,7 @@ class SuggetionBox extends StatelessWidget {
             style: const TextStyle(
               fontFamily: "Cera Pro",
               fontSize: 18,
-              color: Colors.white,
+              color: ColorManger.whiteColor,
             ),
           ),
         ],

@@ -1,4 +1,4 @@
-import 'package:chatgpt/feature/home/data/models/chat_model.dart';
+import 'package:chatgpt/feature/chat/data/models/chat_model.dart';
 import 'package:dash_chat_2/dash_chat_2.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
