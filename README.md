@@ -1,7 +1,4 @@
-# chatgpt
-
-
-## Getting Started
+## chatgpt
 
 The "ChatGPT" app is a Flutter-based mobile application designed to provide users with an interactive chat experience powered by OpenAI's GPT (Generative Pre-trained Transformer) technology. Here's an overview of the app's features and functionalitie
 - Home Screen:
