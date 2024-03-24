@@ -1,4 +1,5 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:chatgpt/core/themaing/app_colors.dart';
 import 'package:chatgpt/feature/chat/presenation/views/chat_screen.dart';
 import 'package:chatgpt/feature/home/presenation/widgets/suggetion_box.dart';
 import 'package:flutter/material.dart';
@@ -29,22 +30,14 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
-          leading: IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.menu,
-              size: 40,
-            ),
-          ),
           title: const Text(
-            "BROXI",
+            "Chat with AI",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontFamily: "Cera Pro",
-              fontSize: 32,
+              fontSize: 26,
             ),
           ),
-          centerTitle: true,
         ),
         body: Padding(
           padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 20),
@@ -58,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   width: double.infinity,
                   height: 150,
                   child: CircleAvatar(
-                    backgroundColor: Colors.white,
+                    backgroundColor: ColorManger.whiteColor,
                     child: Image.asset(
                       'assets/bot.png',
                       fit: BoxFit.contain,
@@ -79,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           textStyle: const TextStyle(
                             fontFamily: "Cera Pro",
                             fontSize: 24,
-                            color: Colors.white,
+                            color: ColorManger.whiteColor,
                           ),
                         )
                       ]),
@@ -92,23 +85,26 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontFamily: "Cera Pro",
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white),
+                        color: ColorManger.whiteColor),
                   ),
                 ),
                 const SuggetionBox(
-                    header: "Ask For Information",
-                    body: "feel free to ask whatever goes in your mind",
-                    color: Colors.deepOrange),
+                  header: "Ask For Information",
+                  body: "feel free to ask whatever goes in your mind",
+                  color: ColorManger.yellowColor,
+                ),
                 const SuggetionBox(
-                    header: "Powerful AI",
-                    body:
-                        "giving facts and up-to-date information with a trained ai bot",
-                    color: Colors.deepPurple),
+                  header: "Powerful AI",
+                  body:
+                      "giving facts and up-to-date information with a trained ai bot",
+                  color: ColorManger.primaryColor,
+                ),
                 const SuggetionBox(
-                    header: "Fast and Accurate",
-                    body:
-                        "Our model is trained to be as fast and accurate as possible",
-                    color: Colors.greenAccent),
+                  header: "Fast and Accurate",
+                  body:
+                      "Our model is trained to be as fast and accurate as possible",
+                  color: ColorManger.redColor,
+                ),
               ],
             ),
           ),
@@ -120,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
               }));
             },
             elevation: 10,
-            backgroundColor: Colors.white,
+            backgroundColor: ColorManger.whiteColor,
             tooltip: "Chat with Broxi",
             child: Image.asset(
               "assets/gpt.png",

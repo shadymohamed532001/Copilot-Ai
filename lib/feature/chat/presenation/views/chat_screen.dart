@@ -19,7 +19,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("BROXI"),
+        title: const Text("Chat with AI"),
       ),
       body: DashChat(
         currentUser: _user,
