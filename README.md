@@ -1,16 +1,8 @@
 # chatgpt
 
-A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+The "ChatGPT" app is a Flutter-based mobile application designed to provide users with an interactive chat experience powered by OpenAI's GPT (Generative Pre-trained Transformer) technology. Here's an overview of the app's features and functionalitie
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="393" alt="Screenshot 2024-03-24 at 2 18 33 PM" src="https://github.com/shadymohamed532001/Copilot-Ai/assets/126605393/22ac4153-0ba0-4571-8574-55687f2b8c90">
